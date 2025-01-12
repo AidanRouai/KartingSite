@@ -1,0 +1,70 @@
+:root {
+  --primary-blue: #003087;
+  --accent-yellow: #FFB81C;
+  --white: #FFFFFF;
+  --light-gray: #f5f5f5;
+  --border-gray: #e0e0e0;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--white);
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: var(--primary-blue);
+  padding: 2rem;
+  color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.leaderboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.leaderboard-table th {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+.leaderboard-table tr:hover {
+  background-color: var(--accent-yellow);
+  color: var(--primary-blue);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.leaderboard-table tbody tr:first-child {
+  background-color: var(--accent-yellow);
+  color: var(--primary-blue);
+  font-weight: bold;
+}
