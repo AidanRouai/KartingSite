@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -14,18 +14,18 @@ interface RaceResult {
 
 function App() {
   const raceResults: RaceResult[] = [
-    { position: 1, driver: "AMR", group:3, avgLap: "X:XX.XXX", laps: 0, bestLap: "X:XX.XXX", points:0  },
-    { position: 2, driver: "Boba Fett", group:1, avgLap: "X:XX.XXX", laps: 0, bestLap: "X:XX.XXX", points:0  },
-    { position: 3, driver: "Mike Oxlong", group:2, avgLap: "X:XX.XXX", laps: 0, bestLap: "X:XX.XXX", points:0  },
+    { position: 1, driver: "AMR", group:3, laps: 0, bestLap: "X:XX.XXX", points:0  },
+    { position: 2, driver: "Boba Fett", group:1, laps: 0, bestLap: "X:XX.XXX", points:0  },
+    { position: 3, driver: "Mike Oxlong", group:2, laps: 0, bestLap: "X:XX.XXX", points:0  },
   ];
 
   return (
     <div className="App">
-      <header className="App-header flex items-center justify-between p-4">
-        <h1 className="text-xl font-bold">
+      <header className="App-header">
+        <h1>
           University of Liverpool Scouse Cup Championship
         </h1>
-        <button className="flex items-center justify-center bg-yourColorCode rounded p-2 icon-button" onClick={() => console.log("Menu clicked")}>
+        <button className="icon-button" onClick={() => console.log("Menu clicked")}>
           <FontAwesomeIcon icon={faBars} transform="grow-15" inverse /> 
         </button>
       </header>
