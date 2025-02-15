@@ -4,7 +4,6 @@ interface RaceResult {
   position: number;
   driver: string;
   group: number;
-  avgLap: string;
   laps: number;
   bestLap: string
   points: number;
@@ -12,9 +11,9 @@ interface RaceResult {
 
 function App() {
   const raceResults: RaceResult[] = [
-    { position: 1, driver: "John Doe", group:1, avgLap: "1:02.345", laps: 12, bestLap: "1:01.234", points: 9  },
-    { position: 2, driver: "Jane Smith", group: 2, avgLap: "1:02.678", laps: 12, bestLap: "1:01.567", points: 9  },
-    { position: 3, driver: "Mike Johnson", group:3, avgLap: "1:03.123", laps: 12, bestLap: "1:02.111", points: 9  },
+    { position: 1, driver: "John Doe", group:1, laps: 12, bestLap: "1:01.234", points: 9  },
+    { position: 2, driver: "Jane Smith", group: 2, laps: 12, bestLap: "1:01.567", points: 9  },
+    { position: 3, driver: "Mike Johnson", group:3, laps: 12, bestLap: "1:02.111", points: 9  },
   ];
 
   return (
@@ -29,7 +28,6 @@ function App() {
               <th>Position</th>
               <th>Driver</th>
               <th>Group</th>
-              <th>Lap Time</th>
               <th>Laps</th>
               <th>Best Lap</th>
               <th>Points</th>
@@ -41,7 +39,6 @@ function App() {
                 <td>{result.position}</td>
                 <td>{result.driver}</td>
                 <td>{result.group}</td>
-                <td>{result.avgLap}</td>
                 <td>{result.laps}</td>
                 <td>{result.bestLap}</td>
                 <td>{result.points}</td>
