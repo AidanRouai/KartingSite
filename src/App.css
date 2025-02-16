@@ -1,5 +1,6 @@
 :root {
   --primary-blue: #003087;
+  --secondary-blue: #00a4fa; 
   --accent-yellow: #FFB81C;
   --white: #FFFFFF;
   --light-gray: #f5f5f5;
@@ -59,17 +60,12 @@
   background-color: var(--light-gray);
 }
 
+
 .leaderboard-table tr:hover {
-  background-color: var(--accent-yellow);
-  color: var(--primary-blue);
+  background: linear-gradient(to right, var(--primary-blue) 10%, 20%, var(--accent-yellow) 90%);
+  color: var(--white);
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-.leaderboard-table tbody tr:first-child {
-  background-color: var(--accent-yellow);
-  color: var(--primary-blue);
-  font-weight: bold;
 }
 
 .icon-button {
