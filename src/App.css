@@ -98,13 +98,19 @@
   .App-header {
     flex-direction: column;
     align-items: center;
-    width: 120%;
+    max-width: 768px;
   }
 
   .App-header h1 { 
     font-size: small;
   }
   
+  .leaderboard-container { 
+   max-width: 768px;
+   margin: 1rem auto;
+   padding: 0%; 
+  }
+
   .leaderboard-table {
     font-size: medium;
     margin: auto;
@@ -120,4 +126,5 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
 }
