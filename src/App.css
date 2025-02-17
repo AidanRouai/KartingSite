@@ -102,10 +102,17 @@
   }
   
   .leaderboard-table {
-    font-size: x-small;
+    font-size: medium;
   }
 
   .icon-button { 
     margin-bottom: 1rem;
+  }
+
+  .leaderboard-table tr:hover {
+    background: linear-gradient(to right, var(--primary-blue) 10%, 20%, var(--accent-yellow) 90%);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 }
