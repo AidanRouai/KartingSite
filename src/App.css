@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 110%;
 }
 
 .App-header h1 {
@@ -77,4 +78,34 @@
   display: flex; 
   align-items: center; 
   justify-content: center; 
+}
+
+.App-header h1 { 
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.App-header button {
+  margin-right: auto;
+}
+
+@media (max-width: 768px){
+  .App-header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .App-header h1 { 
+    font-size: small;
+  }
+  
+  .leaderboard-table {
+    font-size: x-small;
+  }
+
+  .icon-button { 
+    margin-bottom: 1rem;
+  }
 }

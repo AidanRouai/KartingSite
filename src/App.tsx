@@ -51,12 +51,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          University of Liverpool Scouse Cup Championship
-        </h1>
-        <button className="icon-button" onClick={() => console.log("Menu clicked")}>
+      <button className="icon-button" onClick={() => console.log("Menu clicked")}>
           <FontAwesomeIcon icon={faBars} transform="grow-15" inverse /> 
         </button>
+        <h1 className='flex justify-center'>
+          University of Liverpool Scouse Cup Championship
+        </h1>
       </header>
       <main className="leaderboard-container">
         <table className="leaderboard-table">
