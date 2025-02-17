@@ -69,6 +69,10 @@
   transition: background-color 0.3s ease;
 }
 
+.leaderboard-table td { 
+  transition: background-color 0.3 ease;
+}
+
 .icon-button {
   background-color: var(--primary-blue); 
   border: none; 
@@ -103,6 +107,7 @@
   
   .leaderboard-table {
     font-size: medium;
+    margin: auto;
   }
 
   .icon-button { 
@@ -110,7 +115,7 @@
   }
 
   .leaderboard-table tr:hover {
-    background: linear-gradient(to right, var(--primary-blue) 10%, 20%, var(--accent-yellow) 90%);
+    background: var(--accent-yellow);
     color: var(--white);
     cursor: pointer;
     transition: background-color 0.3s ease;
