@@ -57,6 +57,9 @@ function App() {
         <h1 className='flex justify-center'>
           University of Liverpool Scouse Cup Championship
         </h1>
+        <div >
+          <img src='public/Screenshot_20240815_172255_WhatsApp.jpg' className="App-logo flex justify-center" alt="logo"></img>
+        </div>
       </header>
       <main className="leaderboard-container">
         <table className="leaderboard-table">
